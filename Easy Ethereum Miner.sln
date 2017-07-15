@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy Ether Miner", "Jck Mining Tool\Easy Ether Miner.csproj", "{58FC0E29-104A-4176-AB0B-E2B85163825E}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{D3765661-0026-4A1A-A92D-E360049BB325}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58FC0E29-104A-4176-AB0B-E2B85163825E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58FC0E29-104A-4176-AB0B-E2B85163825E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58FC0E29-104A-4176-AB0B-E2B85163825E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58FC0E29-104A-4176-AB0B-E2B85163825E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3765661-0026-4A1A-A92D-E360049BB325}.Debug|Any CPU.ActiveCfg = Debug
+		{D3765661-0026-4A1A-A92D-E360049BB325}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

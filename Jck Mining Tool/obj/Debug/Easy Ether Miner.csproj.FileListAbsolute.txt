@@ -1,0 +1,28 @@
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\Jck Mining Tool.exe.config
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\Jck Mining Tool.exe
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\Jck Mining Tool.pdb
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\BespokeFusion.dll
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\MahApps.Metro.dll
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\ManagedWinapi.dll
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\MaterialDesignColors.dll
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\MaterialSkin.dll
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\MahApps.Metro.pdb
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\MahApps.Metro.xml
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck_Mining_Tool.Location.resources
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck_Mining_Tool.Main.resources
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck_Mining_Tool.Mining.resources
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck_Mining_Tool.MiningSettings.resources
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck_Mining_Tool.Form1.resources
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck_Mining_Tool.Properties.Resources.resources
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Easy Ether Miner.csproj.GenerateResource.Cache
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck Mining Tool.exe
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck Mining Tool.pdb
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\Jck Mining Tool.exe.manifest
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\bin\Debug\Jck Mining Tool.application
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck Mining Tool.exe.manifest
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Jck Mining Tool.application
+C:\Users\dsull\Desktop\Jck Mining Tool v.3\Jck Mining Tool\obj\Debug\Easy Ether Miner.csprojResolveAssemblyReference.cache
