@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Jck Mining Tool.exe" size="154576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Jck Mining Tool.exe" size="155600">
       <assemblyIdentity name="Jck Mining Tool" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xoiDQuSiyJIxum2XeNsHMqyIzckbSyBIhJyipZKN0Vw=</dsig:DigestValue>
+        <dsig:DigestValue>GX7AmXzqKy1l/kgw5tErX1dPZ73NWogu2C7ZJRrv6ds=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

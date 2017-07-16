@@ -34,6 +34,7 @@
             this.MiningLbl = new System.Windows.Forms.Label();
             this.SettingsBtn = new System.Windows.Forms.Button();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.SuspendLayout();
             // 
             // gpuTimer
@@ -57,7 +58,7 @@
             this.MiningLbl.AutoSize = true;
             this.MiningLbl.BackColor = System.Drawing.Color.Transparent;
             this.MiningLbl.Font = new System.Drawing.Font("Roboto", 50F);
-            this.MiningLbl.Location = new System.Drawing.Point(103, 154);
+            this.MiningLbl.Location = new System.Drawing.Point(127, 176);
             this.MiningLbl.Name = "MiningLbl";
             this.MiningLbl.Size = new System.Drawing.Size(237, 81);
             this.MiningLbl.TabIndex = 14;
@@ -92,11 +93,28 @@
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
             this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.AutoSize = true;
+            this.materialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Icon = null;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(12, 360);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(74, 36);
+            this.materialRaisedButton2.TabIndex = 20;
+            this.materialRaisedButton2.Text = "Donate";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 405);
+            this.Controls.Add(this.materialRaisedButton2);
             this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.SettingsBtn);
             this.Controls.Add(this.MiningLbl);
@@ -114,5 +132,6 @@
         private System.Windows.Forms.Label MiningLbl;
         private System.Windows.Forms.Button SettingsBtn;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
     }
 }

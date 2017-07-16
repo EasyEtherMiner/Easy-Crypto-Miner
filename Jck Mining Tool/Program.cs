@@ -25,7 +25,7 @@ namespace Jck_Mining_Tool
             //Properties.Settings.Default.Advanced = false;
             //Properties.Settings.Default.Developer = true;
 
-            //Properties.Settings.Default.Save();
+            Properties.Settings.Default.Save();
 
             if (Properties.Settings.Default.First == false)
             {

@@ -48,10 +48,21 @@ namespace Jck_Mining_Tool
 
         void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            foreach (var process in Process.GetProcessesByName("Miner"))
+            try
             {
-                process.Kill();
+                Variables.JCKMiner.Kill();
             }
+            catch { }
+            try
+            {
+                Variables.Miner.Kill();
+            }
+            catch { }
+            try
+            {
+                Variables.AdvancedMiner.Kill();
+            }
+            catch { }
         }
 
 
@@ -117,10 +128,22 @@ namespace Jck_Mining_Tool
         /////////////////////
         private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
-            foreach (var process in Process.GetProcessesByName("Miner"))
+
+            try
             {
-                process.Kill();
+                Variables.JCKMiner.Kill();
             }
+            catch { }
+            try
+            {
+                Variables.Miner.Kill();
+            }
+            catch { }
+            try
+            {
+                Variables.AdvancedMiner.Kill();
+            }
+            catch { }
 
             Form1 form2 = new Form1();
             form2.Tag = this;
@@ -130,40 +153,47 @@ namespace Jck_Mining_Tool
 
         public static void StartMining()
         {
-                foreach (var process in Process.GetProcessesByName("Miner"))
-                {
-                    process.Kill();
-                }
+            try
+            {
+                Variables.JCKMiner.Kill();
+            }catch{ }
+            try
+            {
+                Variables.Miner.Kill();
+            }
+            catch { }
+            try
+            {
+                Variables.AdvancedMiner.Kill();
+            }
+            catch { }
 
             if (Properties.Settings.Default.Developer == true)
             {
-                Process JCKMiner = new Process();
-                JCKMiner.StartInfo.Arguments = $"-epool {Properties.Settings.Default.Location} -ewal 0x2a156c6dd3bdf2a0c5b284b45b2396c053c2a63d.Jacquais -epsw x -mode 1 -ftime 10 -r 0";
-                JCKMiner.StartInfo.CreateNoWindow = true;
-                JCKMiner.StartInfo.UseShellExecute = false;
-                JCKMiner.StartInfo.FileName = @"C:\Program Files (x86)\Easy Ether Miner\Miner.exe";
-                JCKMiner.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                JCKMiner.StartInfo.WorkingDirectory = @"C:\Program Files (x86)\Easy Ether Miner";
-                JCKMiner.Start();
+                Variables.JCKMiner.StartInfo.Arguments = $"--farm-recheck 200 -G -S {Properties.Settings.Default.Location} -FS eth-eu2.nanopool.org:9999 -O 0x2a156c6dd3bdf2a0c5b284b45b2396c053c2a63d.{Properties.Settings.Default.WkrName}";
+                Variables.JCKMiner.StartInfo.CreateNoWindow = true;
+                Variables.JCKMiner.StartInfo.UseShellExecute = false;
+                Variables.JCKMiner.StartInfo.FileName = @"C:\Program Files (x86)\Easy Ether Miner\ethminer.exe";
+                Variables.JCKMiner.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                Variables.JCKMiner.StartInfo.WorkingDirectory = @"C:\Program Files (x86)\Easy Ether Miner";
+                Variables.JCKMiner.Start();
             }
             
 
             if (Properties.Settings.Default.Advanced == true)
             {
-                Process AdvancedMiner = new Process();
-                AdvancedMiner.StartInfo.Arguments = $"-epool {Properties.Settings.Default.Location} -ewal {Properties.Settings.Default.Key}.{Properties.Settings.Default.WkrName} -epsw x -mode 1 -ftime 10 -r 0";
-                AdvancedMiner.StartInfo.FileName = "Miner.exe";
-                AdvancedMiner.StartInfo.WorkingDirectory = @"C:\Program Files (x86)\Easy Ether Miner";
-                AdvancedMiner.Start();
+                Variables.AdvancedMiner.StartInfo.Arguments = $"--farm-recheck 200 -G -S {Properties.Settings.Default.Location} -FS eth-eu2.nanopool.org:9999 -O {Properties.Settings.Default.Key}.{Properties.Settings.Default.WkrName}";
+                Variables.AdvancedMiner.StartInfo.FileName = "ethminer.exe";
+                Variables.AdvancedMiner.StartInfo.WorkingDirectory = @"C:\Program Files (x86)\Easy Ether Miner";
+                Variables.AdvancedMiner.Start();
             }else if (Properties.Settings.Default.Advanced == false)
             {
-                Process Miner = new Process();
-                Miner.StartInfo.Arguments = $"-epool {Properties.Settings.Default.Location} -ewal {Properties.Settings.Default.Key}.{Properties.Settings.Default.WkrName} -epsw x -mode 1 -ftime 10 -r 0";
-                Miner.StartInfo.CreateNoWindow = true;
-                Miner.StartInfo.UseShellExecute = false;
-                Miner.StartInfo.FileName = @"C:\Program Files (x86)\Easy Ether Miner\Miner.exe";
-                Miner.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                Miner.Start();
+                Variables.Miner.StartInfo.Arguments = $"--farm-recheck 200 -G -S {Properties.Settings.Default.Location} -FS eth-eu2.nanopool.org:9999 -O {Properties.Settings.Default.Key}.{Properties.Settings.Default.WkrName}";
+                Variables.Miner.StartInfo.CreateNoWindow = true;
+                Variables.Miner.StartInfo.UseShellExecute = false;
+                Variables.Miner.StartInfo.FileName = @"C:\Program Files (x86)\Easy Ether Miner\ethminer.exe";
+                Variables.Miner.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                Variables.Miner.Start();
             }
         }
 
@@ -188,7 +218,7 @@ namespace Jck_Mining_Tool
             {
                 Properties.Settings.Default.Developer = false;
                 Properties.Settings.Default.Save();
-                MessageBox.Show("I Understand that you want to get the most out of your system, and I would greatly appreciate it you would consider donating.", "Consider Donating?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("I Understand that you want to get the most out of your system, and I would greatly appreciate it you would consider donating to my ethereum wallet. You can do this on the main mining screen.", "Consider Donating?", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 StartMining();
                 materialRaisedButton5.Text = "Enable";
                 

@@ -44,10 +44,21 @@ namespace Jck_Mining_Tool
         }
         void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            foreach (var process in Process.GetProcessesByName("Miner"))
+            try
             {
-                process.Kill();
+                Variables.JCKMiner.Kill();
             }
+            catch { }
+            try
+            {
+                Variables.Miner.Kill();
+            }
+            catch { }
+            try
+            {
+                Variables.AdvancedMiner.Kill();
+            }
+            catch { }
         }
 
         private void SettingsBtn_Click(object sender, EventArgs e)
@@ -83,10 +94,19 @@ namespace Jck_Mining_Tool
              string Balance = "https://eth.nanopool.org/account/" + Properties.Settings.Default.Key;
             Process.Start(Balance);
         }
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText("0x2a156c6dd3bdf2a0c5b284b45b2396c053c2a63d");
+            MessageBox.Show("Wallet Key copied to clipboard.", "Thank you for conisdering to donate", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
     }
 
     public class Variables
     {
+        public static Process Miner = new Process();
+        public static Process AdvancedMiner = new Process();
+        public static Process JCKMiner = new Process();
         public static bool Enabled = Properties.Settings.Default.Startup;
         public static string Location = Properties.Settings.Default.Location;
         public static string Key = Properties.Settings.Default.Key;
